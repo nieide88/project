@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    background-size: 100%;
+  }
+  /*导航栏*/
+       #sidemenu{
+        display: none;
+    }
+
+    #sidemenu:checked + aside {
+        left: 0;
+    }
+
+    #sidemenu:checked ~ #wrap {
+        padding-left: 220px;
+    }
+
+    aside {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: -200px;
+        width: 200px;
+        background: black;
+        transition: 0.2s ease-out;
+    }
+
+    h2 {
+        color: white;
+        text-align: center;
+        font-size: 2em;
+    }
+    #wrap {
+        margin-left: 20px;
+        padding: 10px;
+        transition: 0.2s ease-out;
+    }
+    label {
+        background: white;
+        border-radius: 70px;
+        color: orange;
+        cursor: pointer;
+        display: block;
+        font-family: Courier New;
+        font-size: 2em;
+        width: 1.5em;
+        height: 1.5em;
+        line-height: 1.5em;
+        text-align: center;
+        display: inline-block;
+    }
+
+    label:hover {
+        background: #000;
+    }
+
+    #sideul li {
+        list-style: none;
+        color: white;
+        width: 100%;
+        height: 1.8em;
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+     .b{
+        text-decoration: none;
+    }
+
+    #sideul li:hover {
+        color: orange;
+    }
+
+  /*位置*/
+  h4{
+    padding:10px;
+    color: white;
+    background-color:rgba(0, 0, 0, 0.814);
+  }
+    div.polaroid {
+      padding: 10px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      text-align: center;
+    }
+    ​
+    div.container {
+      padding: 10px;
+    }
+    /*内容*/
+    ul {
+        list-style-type: none;
+      }
+      .box {
+        background-color: rgba(0, 0, 0, 0.19);
+        width: 80%;
+        height:auto;
+        border: 1px solid #ccc;
+        margin: 50px auto;
+        overflow: hidden;
+      }
+      .hd {
+        height: 45px;
+      }
+      .hd span {
+        display: inline-block;
+        width: 20%;
+        line-height: 45px;
+        text-align: center;
+        cursor: pointer;
+      }
+      .hd span.current {
+        color: orange;
+      }
+      .bd li {
+        display: none;
+      }
+      .bd li.current {
+        display: block;
+      }
+      h3{
+        padding: 10px;
+      }
+      p{
+        padding: 10px 0px 10px 60px;
+      }
+  /*底部*/
+  .copyright
+  {
+    padding: 50px 0;
+    background: #2e2b29;
+    font-size: 12px;
+    color: #d1d1d1;
+    position: relative;
+    line-height: 22px;
+    }
+  .copyright .copy-main
+  {
+    margin:0 auto;
+    overflow:hidden;
+    }
+  .copyright a
+  {
+    color: #bf9d5e;
+    }
+  .copyright img
+  { 
+    margin-right:7px;
+    vertical-align:middle;
+    }
+  .copyright .lines
+  { 
+    width:1px;
+    height:46px;
+    border-left:1px solid #d1d1d1;
+    margin-right:10px;
+    vertical-align:middle;
+    display:inline-block;
+    margin-left: 8px;
+   }
+  .copyright::after
+  {
+    display: block;
+    content: ''; width: 0;
+    height: 0;
+    background: url(../img/hero_fade.png) no-repeat;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    }
+  .copyright-left
+  {
+    width:500px;
+    padding-top:37px;
+    float:left;
+    }
+  .copyright-mid
+  {
+    width: 330px;
+    float: left;
+    }
+  .copyright-right
+  {
+    width: 440px;
+    float: right;
+    }
+  

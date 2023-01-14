@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>三国杀移动版</title>
+</head>
+<link rel="stylesheet" type="text/css" href="\css\模式介绍.css"/>
+<body style="background-image: url(/图片/背景1.jpg);">
+    <input type='checkbox' id='sidemenu'>
+    <aside>
+        <h2>主菜单</h2>
+        <br />
+        <ul id="sideul">
+            <a class="b" href="index.html">
+                <li>首页</li>
+            </a>
+            <a class="b" href="资讯中心.html">
+                <li>资讯中心</li>
+            </a>
+            <a class="b" href="#">
+                <li>资料攻略</li>
+            </a>
+            <a class="b" href="模式介绍.html">
+                <li style="color: orange;">模式介绍</li>
+            </a>
+            <a class="b" href="武将介绍.html">
+                <li>武将介绍</li>
+            </a>
+
+        </ul>
+    </aside>
+    <div id='wrap'>
+        <label id='sideMenuControl' for='sidemenu'>≡</label>
+        <!--for 属性规定 label 与哪个表单元素绑定，即将这个控制侧边栏进出的按钮与checkbox绑定-->
+    </div>
+   <main>
+        <div class="ms">
+            <h4>三国杀移动版->资料攻略->模式介绍</h4>
+           <div class="box" id="box">
+  <div class="hd">
+    <span class="current">排位赛</span>
+    <span>斗地主</span>
+    <span>身份场</span>
+    <span>国战</span>
+  </div>
+  <div class="bd">
+    <ul>
+      <li class="current">
+       <h3>人数：</h3>
+       <p>4人</p>
+       <h3>玩法:</h3>
+       <p>该模式下有4种身份，不同身份的获胜条件不同。主公与忠臣搭档，忠臣则需要保护主公，击杀所有的反贼与内奸获得胜利；反贼需要孤注一掷，全力推翻主公，即可获得胜利；内奸见风使舵，击溃反贼、谋害忠臣，存活到最后并诛杀主公获得胜利。
+       </p>
+       <img src="/图片/身份场.jpg" style="width: 70%;float: left; padding: 10px;">
+      </li>
+      <li>
+        <h3>人数：</h3>
+        <p>3人</p>
+        <h3>玩法:</h3>
+        <p>地主与两个农民战斗，击败对方即可获胜。地主拥有额外技能。
+        </p>
+        <img src="/图片/斗地主场.jpg" style="width: 70%;float: left; padding: 10px;">
+      </li>
+      <li>
+        <h3>人数：</h3>
+        <p>8人</p>
+        <h3>玩法:</h3>
+        <p>该模式下有4种身份，不同身份的获胜条件不同。主公与忠臣搭档，忠臣则需要保护主公，击杀所有的反贼与内奸获得胜利；反贼需要孤注一掷，全力推翻主公，即可获得胜利；内奸见风使舵，击溃反贼、谋害忠臣，存活到最后并诛杀主公获得胜利。
+        </p>
+        <img src="/图片/身份场.jpg" style="width: 70%;float: left; padding: 10px;">
+      </li>
+      <li>
+        <h3>人数：</h3>
+        <p>8人</p>
+        <h3>玩法:</h3>
+        <p>国籍双将系统，武将技能特别重制。根据魏蜀吴群划分阵营，消灭其他全部实力才算胜利，野心家与其他野心家不属同个势力，野心家需要消灭其他势力才算胜利.
+        </p>
+        <img src="/图片/国战场.jpg" style="width: 70%;float: left; padding: 10px;">
+      </li>
+    </ul>
+  </div>
+</div>
+<script>
+  var box = document.getElementById("box");
+  var spans = box.getElementsByTagName("span");
+  var lis = box.getElementsByTagName("li");
+  for (var i = 0; i < spans.length; i++) {
+    spans[i].aaa = i;
+    spans[i].onclick = function () {
+      for (var i = 0; i < spans.length; i++) {
+        spans[i].className = "";
+        lis[i].className = "";
+      }
+      this.className = "current";
+      lis[this.aaa].className = "current";
+    }
+  }
+</script>
+    </main> 
+   <footer>
+    <div class="copyright">
+        <div class="copy-main">
+            <div class="copyright-left">
+                <a href="http://www.yokagames.com/" target="_blank" rel="nofollow"><img src="\图片\狗卡.png" alt="YOKAGAMES 游卡桌游"></a>
+                <span class="lines"></span>
+                <a href="http://sq.ccm.gov.cn/ccnt/sczr/service/business/emark/toDetail/4028c08b5558c352015576c4a46a1eed" target="_blank" rel="nofollow"><img src="\图片\wen.png" alt=""></a>
+                <a href="http://www.cyberpolice.cn/wfjb/" target="_blank" rel="nofollow"><img src="\图片\jing.png" alt=""></a>
+                <a href="http://idinfo.zjamr.zj.gov.cn/bscx.do?method=lzxx&amp;id=3301083301080000062214" target="_blank"><img src="\图片\gong.png" alt=""></a>
+                <a href="http://sq.ccm.gov.cn/ccnt/sczr/service/business/emark/gameNetTag/F35FC9BEF9D152AEE040007F01003007" target="_blank" rel="nofollow"><img src="\图片\youxidzbq.png"></a>
+                <span class="lines"></span>
+            </div>
+            <div class="copyright-mid">
+                客服电话:0571-88133227 (9:00-21:00)<br>
+                来访接待： 杭州良渚数字文化社区b座3楼<br>
+                （周一至周五 9:00-17:00,法定假日除外）<br>
+                抵制不良游戏 | 拒绝盗版游戏 | 注意自我保护 | 谨防受骗上当<br>
+                适度游戏益脑 | 沉迷游戏伤身 | 合理安排时间 | 享受健康生活<br>
+                网络文化经营许可证 浙网文〔2016〕0251-121号
+            </div>
+            <div class="copyright-right">
+                适龄提示：12岁以上 <a href="http://www.yokagames.com/jiazhang/" target="_blank">家长监护工程 |</a> <a href="https://www.sanguosha.cn/user/" target="_blank">最终用户使用许可协议 |</a> <a href="https://splus2.dobest.cn/user/center" target="_blank">实名信息</a><br><a href="https://www.sanguosha.cn/news/detail/553.html" target="_blank">防沉迷系统 |</a> <a href="https://kf1.yokagames.com/front/index/content-detail?id=66" target="_blank">账号注销 |</a> <a href="http://kf.dobest.cn/question/create" target="_blank">不良信息举报 |</a> <a href="https://www.sanguosha.cn/sgs_agreement/index.html" target="_blank">用户隐私政策 |</a> <a href="https://www.sanguosha.cn/children/index.html" target="_blank">儿童隐私政策</a><br>
+                著作权人：杭州游卡网络技术有限公司<br>
+                出版服务单位：杭州边锋网络技术有限公司&nbsp;&nbsp;出版物号：ISBN 978-7-89988-698-4<br>
+                文网游备字〔2015〕Ｍ-CSG 0894 号&nbsp;&nbsp;浙公网安备 <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010502006493" target="_blank">33010502006493</a><br>
+                ICP证号：<a href="https://beian.miit.gov.cn/" target="_blank">浙B2-20160108-15</a>&nbsp;&nbsp;新广出审【2016】775号
+            </div>
+        </div>
+    </div>
+   </footer>
+</body>
