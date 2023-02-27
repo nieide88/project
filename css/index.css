@@ -1,0 +1,219 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.down{
+  max-width:200px;
+  position:fixed;
+  top: 30%;
+}
+/*导航栏*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:rgba(0, 0, 0, 0.592)
+}
+
+li {
+  float: left;
+}
+
+li a, .zixunzx {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  height: auto;
+}
+
+li a:hover, .zixun:hover .zixunzx {
+  background-color: rgb(142, 139, 72);
+}
+
+li.zixun {
+  display: inline-block;
+}
+
+.zixun-content {
+  display: none;
+  position: absolute;
+  background-color:  rgba(0,0,0,0.2);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.zixun-content a {
+  color: white;
+  padding: 10px 16px;      
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.zixun-content a:hover {background-color: rgba(0, 0, 0, 0.2);}
+
+.zixun:hover .zixun-content {
+  display: block;
+}
+/* */
+.tupian{
+  position: relative;
+}
+span{
+  position: absolute;
+  top: 60%;
+  left: 45%;
+}
+th{
+  padding: 20px;
+}
+.a{
+  color: white;
+  float: right;
+  text-decoration: none;
+}
+.b{
+  background-image: url(/图片/排位.jpg);
+  background-size: 100%;
+  margin-left: 10%;
+  width: 80%;
+  height: 300px;
+}
+h3{
+  padding: 10px;
+  color: white;
+  background-color: #2e2b29;
+}
+/*轮播图*/
+.banner {
+  width: 700px;
+  height: 400px;
+  position: relative;
+  /* border: 1px solid red; */
+  margin:50px auto;
+}
+.banner .wrap {
+  width: 100%;
+}
+.banner .wrap .item {
+  width: 100%;
+}
+.item img {
+  width: 700px;
+  height: 400px;
+  vertical-align: top;
+  position: absolute;
+}
+.div1 {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translatey(-50%);
+  cursor: pointer;
+  width: 41px;
+  height: 69px;
+  font-size: 30px;
+  line-height: 70px;
+  text-align: center;
+  color: #D6D8D4;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.div2 {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translatey(-50%);
+  cursor: pointer;
+  width: 41px;
+  height: 69px;
+  font-size: 30px;
+  line-height: 70px;
+  text-align: center;
+  color: #D6D8D4;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.pagenation {
+  position: absolute;
+  /* border: 1px solid red; */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  bottom: 40px;
+}
+
+.pagenation>div {
+
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: white;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.pagenation>div:last-child {
+  margin-right: 0;
+}
+/*底部*/
+.copyright
+{
+  padding: 50px 0;
+  background: #2e2b29;
+  font-size: 12px;
+  color: #d1d1d1;
+  position: relative;
+  line-height: 22px;
+  }
+.copyright .copy-main
+{
+  margin:0 auto;
+  overflow:hidden;
+  }
+.copyright a
+{
+  color: #bf9d5e;
+  }
+.copyright img
+{ 
+  margin-right:7px;
+  vertical-align:middle;
+  }
+.copyright .lines
+{ 
+  width:1px;
+  height:46px;
+  border-left:1px solid #d1d1d1;
+  margin-right:10px;
+  vertical-align:middle;
+  display:inline-block;
+  margin-left: 8px;
+ }
+.copyright::after
+{
+  display: block;
+  content: ''; width: 0;
+  height: 0;
+  background: url(../img/hero_fade.png) no-repeat;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  }
+.copyright-left
+{
+  width:500px;
+  padding-top:37px;
+  float:left;
+  }
+.copyright-mid
+{
+  width: 330px;
+  float: left;
+  }
+.copyright-right
+{
+  width: 440px;
+  float: right;
+  }
